@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aavash Khanal - Personal Portfolio</title>
+
+    <link rel="stylesheet" href="Images/css/style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Aavash Khanal</h1>
+
+    <p>Full-Stack Web Developer & Lifelong Learner</p>
+
+    <nav aria-label="Primary navigation">
+
+        <ul class="navbar">
+
+            <li><a href="#about">About</a></li>
+
+            <li><a href="#skills">Skills</a></li>
+
+            <li><a href="#projects">Projects</a></li>
+
+            <li><a href="#contact">Contact</a></li>
+
+            <li class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search..."
+                    onkeyup="searchSection()">
+            </li>
+
+        </ul>
+
+    </nav>
+
+</header>
+
+<main>
+
+<!-- ABOUT -->
+
+<section id="about">
+
+<h2>About Me</h2>
+
+<div class="about-content">
+
+<div class="about-text">
+
+<p>
+
+Hello! I'm <strong>Aavash Khanal</strong>, a passionate Full-Stack Web Developer with experience in building responsive and accessible websites using HTML, CSS, JavaScript, Python and Node.js.
+
+I enjoy learning new technologies and creating clean, user-friendly web applications.
+
+</p>
+
+</div>
+
+<div class="about-image">
+
+<img src="Images/profile.jpg" alt="Aavash Khanal">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>💻 TECHNICAL SKILLS</h2>
+
+<div class="skills-grid">
+
+<div class="skill-item">
+
+<h3>Programming Languages</h3>
+
+<div class="skill-card">
+
+JavaScript (ES6+)<br>
+
+Python<br>
+
+HTML5<br>
+
+CSS3
+
+</div>
+
+</div>
+
+<div class="skill-item">
+
+<h3>Frontend Development</h3>
+
+<div class="skill-card">
+
+Semantic HTML5<br>
+
+Responsive CSS3<br>
+
+Flexbox & Grid<br>
+
+DOM Manipulation<br>
+
+Accessibility (WCAG)
+
+</div>
+
+</div>
+
+<div class="skill-item">
+
+<h3>Backend & Tools</h3>
+
+<div class="skill-card">
+
+Node.js<br>
+
+Express.js<br>
+
+Git<br>
+
+GitHub<br>
+
+Linux CLI
+
+</div>
+
+</div>
+
+<div class="skill-item">
+
+<h3>Database</h3>
+
+<div class="skill-card">
+
+MySQL<br>
+
+MongoDB<br>
+
+Firebase
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<article>
+
+<h3>Task Manager Web App</h3>
+
+<p>
+
+A task management application built using Node.js, PostgreSQL and JavaScript.
+
+</p>
+
+<p>
+
+<a href="https://github.com/aavashkhanal2024-ship-it/task-manager-app" target="_blank">
+
+View Project →
+
+</a>
+
+</p>
+
+</article>
+
+<article>
+
+<h3>Weather Dashboard</h3>
+
+<p>
+
+Responsive weather dashboard using Weather API.
+
+</p>
+
+<p>
+
+<a href="https://github.com/aavashkhanal2024-ship-it/weather-dashboard" target="_blank">
+
+View Project →
+
+</a>
+
+</p>
+
+</article>
+
+<article>
+
+<h3>Recipe Finder</h3>
+
+<p>
+
+Recipe search application using third-party APIs.
+
+</p>
+
+<p>
+
+<a href="https://github.com/aavashkhanal/recipe-finder" target="_blank">
+
+View Project →
+
+</a>
+
+</p>
+
+</article>
+
+</section>
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact Me</h2>
+
+<form action="https://formspree.io/f/your-form-id" method="POST">
+
+<label>Name</label>
+
+<input type="text" name="name" required>
+
+<label>Email</label>
+
+<input type="email" name="email" required>
+
+<label>Message</label>
+
+<textarea rows="6" name="message" required></textarea>
+
+<button type="submit">Send Message</button>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>&copy; 2026 Aavash Khanal. All Rights Reserved.</p>
+
+<ul>
+
+<li>
+
+<a href="https://github.com/aavashkhana" target="_blank">
+
+GitHub
+
+</a>
+
+</li>
+
+<li>
+
+<a href="https://www.linkedin.com/in/aavashkhanal" target="_blank">
+
+LinkedIn
+
+</a>
+
+</li>
+
+</ul>
+
+</footer>
+
+<script>
+
+function searchSection(){
+
+let input=document.getElementById("searchInput").value.toLowerCase();
+
+let sections=document.querySelectorAll("main section");
+
+sections.forEach(section=>{
+
+let text=section.innerText.toLowerCase();
+
+if(text.includes(input)){
+
+section.style.display="block";
+
+}else{
+
+section.style.display="none";
+
+}
+
+});
+
+}
+
+</script>
+
+</body>
+
+</html>
